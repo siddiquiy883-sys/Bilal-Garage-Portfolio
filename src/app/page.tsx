@@ -57,7 +57,7 @@ export default function Home() {
         heightMultiplier={5}
       >
         {/* Beat 1 — The Authority Introduction */}
-        <div className="h-screen w-full flex flex-col items-center justify-center px-6 text-center">
+        <div className="h-screen w-full flex flex-col items-center justify-center px-4 md:px-6 text-center">
           <Reveal>
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter mb-6 text-white drop-shadow-[0_4px_60px_rgba(0,0,0,0.9)] uppercase leading-[0.9]">
               Quality. Trust.
@@ -76,15 +76,15 @@ export default function Home() {
         </div>
 
         {/* Beat 2 — The Expertise */}
-        <div className="h-screen w-full flex flex-col items-start justify-center px-6 md:px-20">
+        <div className="h-screen w-full flex flex-col items-center md:items-start justify-end md:justify-center px-4 md:px-20 pb-24 md:pb-0 text-center md:text-left">
           <Reveal>
-            <div className="max-w-xl bg-black/60 backdrop-blur-xl p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
-              <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-5 uppercase leading-tight">
+            <div className="max-w-xl bg-black/60 backdrop-blur-xl p-6 md:p-12 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
+              <h2 className="text-2xl md:text-5xl font-black tracking-tight mb-3 md:mb-5 uppercase leading-tight">
                 Expert Care For
                 <br />
                 Every Make &amp; Model.
               </h2>
-              <p className="text-base md:text-lg text-white/70 leading-relaxed mb-6">
+              <p className="text-sm md:text-lg text-white/70 leading-relaxed mb-4 md:mb-6">
                 From a simple oil change to a complete engine rebuild — our
                 certified technicians handle it all with advanced diagnostic
                 tools.
@@ -99,9 +99,9 @@ export default function Home() {
                 ].map((item, i) => (
                   <li
                     key={i}
-                    className="flex items-center gap-3 text-white/90 font-medium"
+                    className="flex items-center justify-center md:justify-start gap-3 text-white/90 font-medium text-sm md:text-base"
                   >
-                    <CheckCircle className="w-5 h-5 text-[#25D366] shrink-0" />
+                    <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-[#25D366] shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -111,24 +111,24 @@ export default function Home() {
         </div>
 
         {/* Beat 3 — The Convenience Promise */}
-        <div className="h-screen w-full flex flex-col items-end justify-center px-6 md:px-20 text-right">
+        <div className="h-screen w-full flex flex-col items-center md:items-end justify-end md:justify-center px-4 md:px-20 pb-24 md:pb-0 text-center md:text-right">
           <Reveal>
-            <div className="max-w-xl bg-black/60 backdrop-blur-xl p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
-              <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-5 uppercase leading-tight">
+            <div className="max-w-xl bg-black/60 backdrop-blur-xl p-6 md:p-12 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
+              <h2 className="text-2xl md:text-5xl font-black tracking-tight mb-3 md:mb-5 uppercase leading-tight">
                 We Tow. We Repair.
                 <br />
                 <span className="text-[#25D366]">We Deliver.</span>
               </h2>
-              <p className="text-base md:text-lg text-white/70 leading-relaxed mb-6">
+              <p className="text-sm md:text-lg text-white/70 leading-relaxed mb-4 md:mb-6">
                 You stay at home or work. We tow your vehicle, restore it with
                 genuine parts &amp; premium oils, and deliver it right back to
                 your doorstep.
               </p>
-              <div className="flex flex-wrap gap-3 justify-end">
-                <span className="bg-white/10 px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+              <div className="flex flex-wrap gap-2 md:gap-3 justify-center md:justify-end">
+                <span className="bg-white/10 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold flex items-center gap-2">
                   <Truck className="w-4 h-4 text-[#25D366]" /> Free Towing
                 </span>
-                <span className="bg-white/10 px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+                <span className="bg-white/10 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold flex items-center gap-2">
                   <ShieldCheck className="w-4 h-4 text-[#25D366]" /> Genuine
                   Parts
                 </span>
@@ -138,15 +138,15 @@ export default function Home() {
         </div>
 
         {/* Beat 4 — Transparent Pricing */}
-        <div className="h-screen w-full flex flex-col items-start justify-center px-6 md:px-20">
+        <div className="h-screen w-full flex flex-col items-center md:items-start justify-end md:justify-center px-4 md:px-20 pb-24 md:pb-0 text-center md:text-left">
           <Reveal>
-            <div className="max-w-xl bg-black/60 backdrop-blur-xl p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
-              <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-5 uppercase leading-tight">
+            <div className="max-w-xl bg-black/60 backdrop-blur-xl p-6 md:p-12 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
+              <h2 className="text-2xl md:text-5xl font-black tracking-tight mb-3 md:mb-5 uppercase leading-tight">
                 Transparent Pricing.
                 <br />
                 <span className="text-[#25D366]">No Hidden Fees.</span>
               </h2>
-              <p className="text-base md:text-lg text-white/70 leading-relaxed mb-6">
+              <p className="text-sm md:text-lg text-white/70 leading-relaxed mb-4 md:mb-6">
                 Before we touch your car, you get a detailed breakdown of every
                 cost. No surprises, no upsells — just honest work at fair
                 prices.
@@ -164,7 +164,7 @@ export default function Home() {
         </div>
 
         {/* Beat 5 — The CTA */}
-        <div className="h-screen w-full flex flex-col items-center justify-center px-6 text-center">
+        <div className="h-screen w-full flex flex-col items-center justify-center px-4 md:px-6 text-center">
           <Reveal>
             <h2 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter mb-4 uppercase drop-shadow-2xl leading-[0.9]">
               Get Your Car
@@ -285,18 +285,18 @@ export default function Home() {
         heightMultiplier={4}
       >
         {/* Beat 1 */}
-        <div className="h-screen w-full flex flex-col items-start justify-center px-6 md:px-20">
+        <div className="h-screen w-full flex flex-col items-center md:items-start justify-end md:justify-center px-4 md:px-20 pb-24 md:pb-0 text-center md:text-left">
           <Reveal>
-            <div className="max-w-md bg-black/70 backdrop-blur-2xl p-8 md:p-10 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
-              <h3 className="text-3xl md:text-4xl font-black mb-4 text-[#25D366] uppercase">
+            <div className="max-w-md bg-black/70 backdrop-blur-2xl p-6 md:p-10 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
+              <h3 className="text-2xl md:text-4xl font-black mb-3 md:mb-4 text-[#25D366] uppercase">
                 Hands-On Leadership
               </h3>
-              <p className="text-base md:text-lg text-white/90 leading-relaxed mb-4">
+              <p className="text-sm md:text-lg text-white/90 leading-relaxed mb-4">
                 I don&apos;t just manage the garage — I&apos;m on the floor
                 every single day. I personally oversee the diagnostics and
                 repair of every vehicle.
               </p>
-              <p className="text-white/50 italic text-sm">
+              <p className="text-white/50 italic text-xs md:text-sm">
                 &quot;When you bring your car here, it&apos;s treated as if it
                 were my own.&quot;
               </p>
@@ -305,13 +305,13 @@ export default function Home() {
         </div>
 
         {/* Beat 2 */}
-        <div className="h-screen w-full flex flex-col items-end justify-center px-6 md:px-20 text-right">
+        <div className="h-screen w-full flex flex-col items-center md:items-end justify-end md:justify-center px-4 md:px-20 pb-24 md:pb-0 text-center md:text-right">
           <Reveal>
-            <div className="max-w-md bg-black/70 backdrop-blur-2xl p-8 md:p-10 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
-              <h3 className="text-3xl md:text-4xl font-black mb-4 text-[#25D366] uppercase">
+            <div className="max-w-md bg-black/70 backdrop-blur-2xl p-6 md:p-10 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
+              <h3 className="text-2xl md:text-4xl font-black mb-3 md:mb-4 text-[#25D366] uppercase">
                 Advanced Diagnostics
               </h3>
-              <p className="text-base md:text-lg text-white/90 leading-relaxed">
+              <p className="text-sm md:text-lg text-white/90 leading-relaxed">
                 Modern cars are complex computers on wheels. We invest in
                 state-of-the-art diagnostic software and tools to pinpoint exact
                 issues quickly — saving you time, money, and unnecessary parts.
@@ -321,17 +321,17 @@ export default function Home() {
         </div>
 
         {/* Beat 3 */}
-        <div className="h-screen w-full flex flex-col items-start justify-center px-6 md:px-20">
+        <div className="h-screen w-full flex flex-col items-center md:items-start justify-end md:justify-center px-4 md:px-20 pb-24 md:pb-0 text-center md:text-left">
           <Reveal>
-            <div className="max-w-md bg-black/70 backdrop-blur-2xl p-8 md:p-10 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
-              <h3 className="text-3xl md:text-4xl font-black mb-4 text-[#25D366] uppercase">
+            <div className="max-w-md bg-black/70 backdrop-blur-2xl p-6 md:p-10 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
+              <h3 className="text-2xl md:text-4xl font-black mb-3 md:mb-4 text-[#25D366] uppercase">
                 Your Car, Our Passion
               </h3>
-              <p className="text-base md:text-lg text-white/90 leading-relaxed mb-4">
+              <p className="text-sm md:text-lg text-white/90 leading-relaxed mb-4">
                 From luxury sedans to family SUVs and work trucks — every
                 vehicle gets the same meticulous attention and premium care.
               </p>
-              <div className="flex items-center gap-2 text-yellow-400 font-bold text-sm">
+              <div className="flex items-center justify-center md:justify-start gap-2 text-yellow-400 font-bold text-xs md:text-sm">
                 {[1, 2, 3, 4, 5].map((s) => (
                   <Star key={s} className="w-5 h-5 fill-current" />
                 ))}
@@ -342,18 +342,18 @@ export default function Home() {
         </div>
 
         {/* Beat 4 — Trust CTA */}
-        <div className="h-screen w-full flex flex-col items-center justify-center px-6 text-center">
+        <div className="h-screen w-full flex flex-col items-center justify-center px-4 md:px-6 text-center">
           <Reveal>
-            <div className="max-w-2xl bg-black/80 backdrop-blur-2xl p-10 md:p-14 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
-              <h3 className="text-4xl md:text-5xl font-black mb-6 uppercase">
+            <div className="max-w-2xl bg-black/80 backdrop-blur-2xl p-6 md:p-14 rounded-3xl border border-white/10 shadow-2xl pointer-events-auto">
+              <h3 className="text-3xl md:text-5xl font-black mb-4 md:mb-6 uppercase">
                 Trusted By Hundreds
               </h3>
-              <div className="flex justify-center gap-2 mb-6 text-yellow-400">
+              <div className="flex justify-center gap-1 md:gap-2 mb-4 md:mb-6 text-yellow-400">
                 {[1, 2, 3, 4, 5].map((s) => (
-                  <Star key={s} className="w-8 h-8 fill-current" />
+                  <Star key={s} className="w-6 h-6 md:w-8 md:h-8 fill-current" />
                 ))}
               </div>
-              <p className="text-lg md:text-xl text-white/80 mb-10 italic leading-relaxed">
+              <p className="text-base md:text-xl text-white/80 mb-8 md:mb-10 italic leading-relaxed">
                 &quot;Car Garage Auto Service is the only place I trust with my
                 car in Dubai. Honest pricing, fast turnarounds, and phenomenal
                 service.&quot;
