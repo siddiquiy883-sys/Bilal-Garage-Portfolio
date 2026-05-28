@@ -53,12 +53,20 @@ export default function CinematicCanvas({
       const ch = canvas.height;
       const iw = img.naturalWidth;
       const ih = img.naturalHeight;
-      const scale = Math.max(cw / iw, ch / ih);
+      
+      // On desktop (landscape), use 'cover' (Math.max) to fill the screen.
+      // On mobile (portrait), use 'contain' (Math.min) so the car/subject fully fits,
+      // and seamlessly blends into the #050505 background above and below.
+      const isMobile = cw < ch;
+      const scale = isMobile ? Math.min(cw / iw, ch / ih) : Math.max(cw / iw, ch / ih);
+      
       const dw = iw * scale;
       const dh = ih * scale;
 
       ctx.fillStyle = "#050505";
       ctx.fillRect(0, 0, cw, ch);
+      
+      // Draw centered
       ctx.drawImage(img, (cw - dw) / 2, (ch - dh) / 2, dw, dh);
       frameRef.current = idx;
     },
