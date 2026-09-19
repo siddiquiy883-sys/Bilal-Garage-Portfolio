@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Phone, Calendar } from "lucide-react";
+import { Phone } from "lucide-react";
 
 export default function HeroSection() {
   return (
